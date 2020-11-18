@@ -1,0 +1,56 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 class="btn btn-default heading">Image recognition</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+<b class="name-of-objects">
+bible
+  <hr>
+ enid blyton
+ <hr>
+malory towers
+  <hr>
+ guide
+  <hr>
+</b>
+      <label>Webcam View - </label>
+
+      <br><br>
+<div id="camera"></div>
+      <br><br>
+<div id="result"></div>
+      <br><br>
+<button class="btn btn-info" onclick="takeSnapshot()">capture image</button>
+      <br><br>
+<button class="btn btn-sucess" onclick="check()">identify image</button>
+      <p style="font-size: 22px;">Object : <span id="result-object-name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result-object-acurracy"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+

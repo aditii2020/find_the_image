@@ -1,0 +1,24 @@
+body{
+    background-color: #292929;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+}
+#camera{
+    border:2px 2px 2px 2px #8000ff;
+    border-style: dashed;
+    border-width: 2px;
+    width: 350px;
+    height: 300px;
+}
+.heading{
+    font-size: 40px;
+    color: teal;
+    width: 80%;
+}
+.heading:hover{
+    color: yellow;
+    background-color: #292929;
+    font-weight: bold;
+    font-size: 47px;
+}
